@@ -1,0 +1,21 @@
+site_name: "ModelManagementFramework"
+theme:
+  name: material
+  palette:
+    primary: black
+#  logo: assets/logo.svg
+  language: ru
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+nav:
+  - Home: index.md
+  - Для ML-разработчика:
+      - Подготовка: prep.md
+      - mmf.yml: mmfyml.md
+      - mmf-meta: mmf-meta.md
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
