@@ -8,9 +8,9 @@
 pip install mmf-meta
 ```
 ## mmf
-Для начала нужно импортировать библиотеку mmf_core, для простоты присвоим ей более короткое название - mmf
+Для начала нужно импортировать библиотеку `mmf_meta`, для простоты присвоим ей более короткое название - `mmf`
 ```python hl_lines="1"
-import mmf_core as mmf
+import mmf_meta as mmf
 import pandas as pd
 import pickle
 
