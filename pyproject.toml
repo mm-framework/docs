@@ -7,6 +7,11 @@ authors = ["andvikt <andvikt@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.10"
 mkdocs-material = "^8.1.7"
+mkdocstrings = "^0.17.0"
+mkdocs-mermaid2-plugin = "^0.5.2"
+pydantic = "^1.9.0"
+astunparse = "^1.6.3"
+mmf-meta = "0.1.2"
 
 [tool.poetry.dev-dependencies]
 

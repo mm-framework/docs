@@ -9,17 +9,39 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
+    - content.code.annotate
 nav:
-  - Home: index.md
+  - Home:
+    - Главное: index.md
+    - Реализация:
+        - Коммуникация: rpc.md
+        - Логирование: log.md
+        - Масштабирование: scale.md
+        - Балансировка: balance.md
+
   - Для ML-разработчика:
-      - Подготовка: prep.md
-      - mmf.yml: mmfyml.md
-      - mmf-meta: mmf-meta.md
+      - Быстрый старт: quick.md
+      - Дескрипторы: descriptors.md
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
   - footnotes
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
+  - autorefs
+  - mkdocstrings
+  - mermaid2
