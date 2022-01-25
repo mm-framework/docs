@@ -149,6 +149,25 @@ with open('model', 'br') as f:
     Все аргументы таргета в обязательном порядке должны содержать [дескрипторы](), в противном случае модель не будет
     загружена с ошибкой `DescriptorError`
 
+## результат
+
+В результате мы получим примерно такой файл с описанием модели, назовем его `main.py`:
+```python
+import mmf_meta as mmf
+import pandas as pd
+import pickle
+
+with mmf.artifact('model', 'br') as f:
+    model = pickle.load(f)
+
+@mmf.target(returns=mmf.DataFrame(format=mmf.XLSX))
+def score(
+    data = mmf.DataFrame(description='Данные для модели')
+):
+    return model.predict(data)
+```
+
+
 ## requirements.txt
 Для указания зависимостей проекта используется pip-совместимый файл 
 [requirements](https://pip.pypa.io/en/stable/reference/requirements-file-format/#requirements-file-format). Общая
