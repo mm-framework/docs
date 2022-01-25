@@ -2,7 +2,7 @@
 уже работали с такими фреймворками как flask, connexion, fastapi. Если нет - ничего страшного, это простые 
 концепции
 
-## mmf-core
+## mmf-meta
 Для начала работы вам необходимо установить библиотеку [mmf-meta](https://pypi.org/project/mmf-meta/):
 ```shell
 pip install mmf-meta
