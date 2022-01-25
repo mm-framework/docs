@@ -44,3 +44,4 @@ plugins:
   - autorefs
   - mkdocstrings
   - mermaid2
+repo_url: https://github.com/mm-framework
