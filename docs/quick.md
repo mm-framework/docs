@@ -167,6 +167,7 @@ def score(
     return model.predict(data)
 ```
 
+[Другой пример на github](https://github.com/mm-framework/mmf_test_model)
 
 ## requirements.txt
 Для указания зависимостей проекта используется pip-совместимый файл 
